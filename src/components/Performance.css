@@ -1,0 +1,153 @@
+.performance {
+  padding: 20px 0;
+}
+
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.metric-box {
+  background: #000;
+  border: 3px solid #00ff41;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.metric-header {
+  background: rgba(0, 255, 65, 0.1);
+  padding: 15px;
+  border-bottom: 2px solid #00ff41;
+  color: #ffb000;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.metric-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.metric-number {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.metric-number.profit {
+  color: #00ff41;
+  text-shadow: 0 0 20px #00ff41;
+}
+
+.metric-number.loss {
+  color: #ff003c;
+  text-shadow: 0 0 20px #ff003c;
+}
+
+.metric-detail {
+  color: #00ffff;
+  font-size: 1.5rem;
+}
+
+.metric-footer {
+  padding: 15px;
+  border-top: 2px solid #00ff41;
+}
+
+.progress-track {
+  height: 10px;
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid #00ff41;
+  overflow: hidden;
+}
+
+.progress-indicator {
+  height: 100%;
+  transition: width 1s ease-out;
+}
+
+.progress-indicator.profit {
+  background: #00ff41;
+  box-shadow: 0 0 10px #00ff41;
+}
+
+.progress-indicator.loss {
+  background: #ff003c;
+  box-shadow: 0 0 10px #ff003c;
+}
+
+.data-table {
+  background: #000;
+  border: 3px solid #00ff41;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.table-header {
+  background: rgba(0, 255, 65, 0.1);
+  padding: 15px;
+  border-bottom: 2px solid #00ff41;
+  color: #ffb000;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.table-content {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #00ff41;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  color: #ffb000;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid #00ff41;
+  font-size: 1.2rem;
+}
+
+td {
+  color: #00ff41;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+  font-size: 1.2rem;
+}
+
+tr:hover {
+  background: rgba(0, 255, 65, 0.05);
+}
+
+td.profit {
+  color: #00ff41;
+  font-weight: bold;
+}
+
+td.loss {
+  color: #ff003c;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .table-content {
+    padding: 10px;
+  }
+  
+  th, td {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
