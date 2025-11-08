@@ -31,4 +31,25 @@ function Dashboard({ trades }) {
 
         <div className="stat-card">
           <div className="stat-label">TOTAL P/L</div>
-          <div className={
+          <div className={`stat-value ${totalPnL >= 0 ? 'profit' : 'loss'}`}>
+            {totalPnL >= 0 ? '+' : ''}{totalPnL.toFixed(2)}
+          </div>
+          <div className="stat-bar"></div>
+        </div>
+      </div>
+
+      <div className="terminal-output">
+        <div className="terminal-header">SYSTEM LOG</div>
+        <div className="terminal-content">
+          <div className="log-line">&gt; INITIALIZING TRADE LOG 3000...</div>
+          <div className="log-line">&gt; LOADING TRADE DATA...</div>
+          <div className="log-line">&gt; {totalTrades} ENTRIES FOUND</div>
+          <div className="log-line">&gt; SYSTEM STATUS: OPERATIONAL</div>
+          <div className="log-line blink">&gt; READY_</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Dashboard
