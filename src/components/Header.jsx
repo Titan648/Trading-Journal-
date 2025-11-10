@@ -15,7 +15,7 @@ function Header() {
     <header className="header">
       <div className="header-content">
         <h1 className="title pixel-font">
-          TRADE LOG 3000
+          TAFITA JOURNAL 1960
           <span className={`cursor ${showCursor ? 'visible' : ''}`}>_</span>
         </h1>
         <div className="header-info">
